@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0"/>
+    <title>EliteFootballAI-AI Powered Predictions</title>
+    <link rel="stylesheet"
+    href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-content">
+        <img src="images/logo.png"
+        alt="EliteFootballAI logo" class="logo">
+      </div>
+      <h1>EliteFootballAI</h1>
+       </header>
+       
+       <main class="container">
+        <section class="left">
+          <div class="section-header">
+            <h2>Live Scores</h2>
+          </div>
+          <div id="livescores"
+          class="card-list">
+            <p>Loading live scores...</p>
+          </div>
+          
+          <div class="section-header">
+            <h2>Live Commentary</h2>
+          </div>
+          <div id="commentary"
+          class="commentary-box">
+            <p>Waiting for match events...</p>
+          </div>
+          
+          <div class="section-header">
+            <h2>Predictions</h2>
+          </div>
+          <div id="predictions"
+          class="card-list">
+            <p>Fetching today's tips...</p>
+          </div>
+        </section> 
+        
+        <aside class="right">
+          <div id="ai-ad-box"
+          class="ad-area"></div>
+          
+          <div class="buy-prediction-card">
+            <h3>Get VIP Access</h3>
+            <div class="form-group">
+              <input type="text" id="phone" placeholder="MPESA Number (254...)">
+            </div>
+            <div class="form-group">
+              <select id="prediction-select">
+                <option value="">Loading packages...</option>
+                  </select>
+                 </div>
+                 <button id="buy-btn"
+          class="primary-btn">Buy Now</button>
+               </div>
+               
+               <div class="mpesa card">
+                 <h3>Direct Mpesa Payment</h3>
+                 <div class="form-group">
+                   <input type="text"
+                   id="mpesa-phone" placeholder="Phone (e.g. 2547...)" />
+                 </div>
+                 <div class="form-group">
+                   <input type="number" id="mpesa-amount"
+                   placeholder="Amount(KES)"/>
+                 </div>
+                 <button id="stk-push-btn"
+                 class="mpesa-btn">Request STK push</button>
+               </div>
+               
+               <div class="generated-ad-card">
+                 <h3>AI Ad Tool</h3>
+                 <div class="form-group">
+                   <textarea id="ad-prompt"
+                   placeholder="Describe the type of ad you want AI to write..."></textarea>
+                 </div>
+                 <button id="gen-ad-btn"
+                 class="secondary-btn">Generate AI Ad </button>
+               </div>
+        </aside>
+       </main>
+       <footer class="site-footer">
+         <p>&copy; 2025 EliteFootballAI-All rights reserved</p>
+       </footer>
+       
+       <script src="script.js"></script>
+  </body>
+</html>

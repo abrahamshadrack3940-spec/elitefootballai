@@ -1,0 +1,24 @@
+{
+  "ai_ads":[
+    {
+      "id":1,
+      "category":"VIP",
+      "title":"Elite VIP AI Predictions",
+      "description":"Unlock Today's premium AI-generated predictions with 95% accuracy.",
+      "image":"images/vip.png",
+      "cta":"Get VIP Tips",
+      "link":"/vip",
+      "active":true
+    },
+    {
+      "id":2,
+      "category":"Jackpot",
+      "title":"AI Jackpot Boost",
+      "description":"Smart AI jackpot combinations update daily-win big!",
+      "image":"images/jackpot.png",
+      "cta":"Play Jackpot",
+      "link":"/jackpot",
+      "active":true
+    }
+    ]
+}

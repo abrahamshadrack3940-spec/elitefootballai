@@ -1,0 +1,22 @@
+{
+  "predictions":[
+    {
+      "id": 1,
+      "type": "VIP",
+      "matches": [
+        "Arsenal vs Chelsea",
+        "Man City vs Spurs"
+        ],
+        "price": 400
+    },
+    {
+      "id": 2,
+      "type": "Jackpot",
+      "matches": [
+        "Barcelona vs Sevilla",
+        "Real vs Atletico"
+        ],
+        "price": 200
+    }
+    ]
+}

@@ -1,0 +1,130 @@
+:root {
+  --bg: #0f1724;
+  --card: #ffffff;
+  --accent: #ffcc00;
+  --muted: #6b7280;
+  --maxWidth: 1100px;
+  --dark-text: #0b1220;
+}
+
+/*Fixed: Changed bullet point to asterisk for universal selector*/
+* {
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: 'Inter',system-ui,-apple-system, Sans-Serif;.
+  background: linear-gradient(180deg, #071428 0%, #0f1724 100%);
+  color: #e6eef8;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: var(--maxWidth);
+  margin: 20px auto;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 18px;
+}
+
+/*Header*/
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 20px;
+  color: var(--accent);
+  letter-spacing: 0.6px;
+}
+
+/*Cards*/
+.card, .ad-card, .buy-prediction-card {
+  background: var(--card);
+  color: var(--dark-text);
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 12px;
+  box-shadow: 0 6px 20px rgba(2, 6, 23, 0.5);.
+}
+
+.card h4, .card h3{
+  margin: 0 0 10px 0;
+}
+
+/*Inputs & Buttons*/
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #f9fafb;
+  margin: 6px 0 10px 0;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #071428;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+
+button:hover{
+  opacity: 0.9;
+}
+
+/*Ads*/
+.ad-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  object-fit: cover;
+}
+
+.ad-btn {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #071428;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*Mobile Responsive*/
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; padding: 10px;
+  }
+}
+
+.site footer{
+  text-align: center;
+  padding: 24px;
+  color: var(--muted);
+  font-size: 14px;
+}
